@@ -11,4 +11,39 @@
 body {
   font: 1.5rem "Nunito", sans-serif;
   min-height: 100vh;
+
+  background-color: cadetblue;
+  background-image: radial-gradient(whitesmoke, cadetblue);
+  display: flex;
+  flex-direction: column;
+}
+
+header, nav, main, footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+header, footer {
+  position: sticky;
+  background-color: #1E293B;
+  color: whitesmoke;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: #fff;
+  color: #1E293B;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  bottom: 0;
 }
